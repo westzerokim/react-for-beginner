@@ -1,0 +1,123 @@
+.movie-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 70vh;
+  margin: 15vh auto;
+  background-color: aqua;
+  box-sizing: border-box;
+}
+
+.movie-container > .img {
+  text-align: center;
+  width: 100%;
+  height: 60%;
+}
+.movie-container > .img > img {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.movie-container > h2 {
+  font-size: 20px;
+}
+
+.movie-container > ul {
+  padding: 0;
+}
+
+.movie-container > li {
+  margin: 0 5px;
+}
+.genres > li {
+  list-style: none;
+}
+
+p {
+  overflow: hidden;
+  transition: max-height 1s ease; /* height 프로퍼티 삭제 */
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  max-height: 4.5em; /* 한 줄의 높이와 곱하기 원하는 줄 수를 고려한 값 */
+}
+p.open {
+  -webkit-line-clamp: unset;
+  max-height: 1000px;
+}
+.movie {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 150%; /* 이 값을 조정하여 이미지 비율을 조절할 수 있습니다. */
+}
+.Movie > img {
+  width: 100%;
+  height: 20%; /* 화면 높이의 50% */
+  object-fit: cover; /* 이미지를 채우되 가로 세로 비율 유지 */
+}
+.movie-img {
+  height: 50%;
+  position: relative;
+}
+.movie-img a {
+  display: block;
+  height: 100%;
+}
+
+.movie-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.title {
+  margin-top: 10px;
+}
+
+.summary {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
+.genres {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.movie-container ul.m_list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.movie-container ul.m_list li {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  height: 1.4em;
+}
+
+.movie-container ul.m_list li i.material-icons-outlined {
+  margin-right: 10px;
+  font-size: 1.4em;
+  line-height: 0;
+}
+.movie-container ul.m_list li i {
+  margin: 0;
+  padding: 0;
+}
+
+.movie-container ul.m_list li:last-child {
+  margin-right: 0;
+}
